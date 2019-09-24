@@ -25,6 +25,14 @@
             daughter (3). I also enjoy reading comic books/graphic novels (particularly DC), video games, movies/TV,
             and reading.</p>
     </div>
+    <div class="youtube col-sm-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GUfoBowpjZ4" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d-RldyMf3aI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hg2tp6wocWw" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </body>
 <footer>
     <?php
