@@ -14,7 +14,7 @@
         include_once 'php/nav_bar.php';
     ?>
 </header>
-<body>
+<body class="container-fluid">
     <h1>The Me Site</h1>
     <div class="info" id="homeDiv">
 

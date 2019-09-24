@@ -2,3 +2,8 @@
     background-color: black;
     color: yellow;
 }
+
+#navLinks:hover {
+    background-color: blue;
+    color: aliceblue;
+}
