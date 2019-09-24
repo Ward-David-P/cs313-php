@@ -1,5 +1,5 @@
 // highlighting the active page on nav_bar.php
-$(document).ready(function()
+$(window).on("load", function()
 {
     $("a").each(function()
     {
