@@ -11,7 +11,7 @@
 </head>
 <header>
     <?php
-        include_once 'nav_bar.php';
+        include_once 'php/nav_bar.php';
     ?>
 </header>
 <body>
@@ -22,6 +22,6 @@
 </body>
 <footer>
     <?php
-        include_once 'footer.php';
+        include_once 'php/footer.php';
     ?>
 </footer>
