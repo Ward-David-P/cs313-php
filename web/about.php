@@ -14,9 +14,9 @@
     include_once 'php/nav_bar.php';
     ?>
 </header>
-<body class="container-fluid">
+<body>
     <h1>About Me and Stuff</h1>
-    <div class="info col-sm-4" id="aboutDiv">
+    <div class="container-fluid info col-sm-4" id="aboutDiv">
         <p>My name is David Ward. I am from Mesa, Arizona USA. I served in the Ohio Cleveland Mission. I am studying
             Software Engineering and would like to develop educational software and tools. Currently, I work as a
             Solutions Engineer for GoDaddy. I love to do things outdoors. Hiking, backpacking, climbing, and camping
@@ -25,7 +25,7 @@
             daughter (3). I also enjoy reading comic books/graphic novels (particularly DC), video games, movies/TV,
             and reading.</p>
     </div>
-    <div class="youtube col-sm-4">
+    <div class="container-fluid youtube col-sm-4">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/GUfoBowpjZ4" frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/d-RldyMf3aI" frameborder="0"
