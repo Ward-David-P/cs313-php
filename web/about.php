@@ -15,8 +15,8 @@
     ?>
 </header>
 <body>
-    <h1>About Me and Stuff</h1>
     <div class="container-fluid info col-sm-4" id="aboutDiv">
+        <h1>About Me and Stuff</h1>
         <p>My name is David Ward. I am from Mesa, Arizona USA. I served in the Ohio Cleveland Mission. I am studying
             Software Engineering and would like to develop educational software and tools. Currently, I work as a
             Solutions Engineer for GoDaddy. I love to do things outdoors. Hiking, backpacking, climbing, and camping
