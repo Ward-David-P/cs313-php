@@ -1,0 +1,21 @@
+div:hover {
+    font-weight: bold;
+}
+
+#div1 {
+    font-size: medium;
+    background-color: bisque;
+    color: blue;
+}
+
+#div2 {
+    font-size: small;
+    background-color: black;
+    color: yellow;
+}
+
+#div3 {
+    font-size: large;
+    background-color: cornsilk;
+    color: crimson;
+}
