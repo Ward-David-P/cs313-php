@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="container-fluid">
-    <div class="topNav">
+    <div class="topNav col-sm-8">
         <a class="navLinks" href="../index.php">Home</a>
         <a class="navLinks" href="../assignments.php">Assignments</a>
         <a class="navLinks" href="../about.php">About Stuff</a>
