@@ -17,7 +17,7 @@
 <body>
     <div class="container-fluid info col-sm-4" id="homeDiv">
         <h1>The Me Site</h1>
-        <img src="img/20190827_091525-ANIMATION.gif">
+        <img src="img/ElizaClimbing479x359.jpg">
         <p>Hi, my name is David. To learn more about me and some other stuff go to my <a href="about.php">about</a>
             page. Really, you should go there. There isn't really anything else here.</p>
     </div>
