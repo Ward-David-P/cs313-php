@@ -15,11 +15,15 @@
     ?>
 </header>
 <body>
-    <div class="container-fluid info col-sm-4" id="homeDiv">
+    <div class="container-fluid info" id="homeDiv">
         <h1>The Me Site</h1>
-        <img src="img/ElizaClimbing479x359.jpg">
-        <p>Hi, my name is David. To learn more about me and some other stuff go to my <a href="about.php">about</a>
-            page. Really, you should go there. There isn't really anything else here.</p>
+        <div class="col-sm-4">
+            <img id="eliza" src="img/ElizaClimbing479x359.jpg">
+        </div>
+        <div class="col-sm-4">
+            <p>Hi, my name is David. To learn more about me and some other stuff go to my <a href="about.php">about</a>
+                page. Really, you should go there. There isn't really anything else here.</p>
+        </div>
     </div>
 </body>
 <footer>
