@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec058e69-7762-443d-afc9-e8d926a2febc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TeamAssignments/Team.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,12 +39,6 @@
     <include_path>
       <path value="C:/php-7.3" />
     </include_path>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="85" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
   </component>
   <component name="ProjectId" id="1RXEhIK76qoaxWI69XetC9Cy20u" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -115,7 +109,8 @@
       <workItem from="1569804776505" duration="31000" />
       <workItem from="1569805165980" duration="5957000" />
       <workItem from="1569827433130" duration="5000" />
-      <workItem from="1569852099714" duration="427000" />
+      <workItem from="1569852099714" duration="1704000" />
+      <workItem from="1569938770169" duration="1742000" />
     </task>
     <task id="LOCAL-00001" summary="added about page and updates to css">
       <created>1569351060100</created>
@@ -208,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569812401487</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="css">
+      <created>1569852547956</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1569852547956</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
