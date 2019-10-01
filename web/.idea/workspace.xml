@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ec058e69-7762-443d-afc9-e8d926a2febc" name="Default Changelist" comment="" />
+    <list default="true" id="ec058e69-7762-443d-afc9-e8d926a2febc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/TeamAssignments/Team.php" beforeDir="false" afterPath="$PROJECT_DIR$/TeamAssignments/Team.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +109,7 @@
       <workItem from="1569805165980" duration="5957000" />
       <workItem from="1569827433130" duration="5000" />
       <workItem from="1569852099714" duration="1704000" />
-      <workItem from="1569938770169" duration="1994000" />
+      <workItem from="1569938770169" duration="2274000" />
     </task>
     <task id="LOCAL-00001" summary="added about page and updates to css">
       <created>1569351060100</created>
@@ -214,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569941331822</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="team assignment 3">
+      <created>1569941504412</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1569941504412</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
