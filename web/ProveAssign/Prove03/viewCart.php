@@ -19,6 +19,6 @@
         echo "</pre>";
     }
 
-    pre_r($_SESSION);
+    pre_r($_SESSION['cartItems']);
 ?>
 </body>

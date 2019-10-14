@@ -111,7 +111,7 @@
       <workItem from="1569852099714" duration="1704000" />
       <workItem from="1569938770169" duration="3369000" />
       <workItem from="1569945947245" duration="68000" />
-      <workItem from="1571079650580" duration="7146000" />
+      <workItem from="1571079650580" duration="7413000" />
     </task>
     <task id="LOCAL-00001" summary="added about page and updates to css">
       <created>1569351060100</created>
@@ -281,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1571087093768</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="prove03">
+      <created>1571087457698</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1571087457698</updated>
+    </task>
+    <task id="LOCAL-00026" summary="prove03">
+      <created>1571087639852</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1571087639852</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
