@@ -9,3 +9,15 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+<?php
+    function pre_r($array)
+    {
+        echo "<pre>";
+        print_r($array);
+        echo "</pre>";
+    }
+
+    pre_r($_SESSION);
+?>
+</body>
