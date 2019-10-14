@@ -13,12 +13,12 @@
     <?php require_once 'php/functions.php' ?>
     <div class="container-fluid info" id="homeDiv">
         <table name="productTable">
-            <tr><td></td><td><button id="addToCart0" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td><button id="addToCart1" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td><button id="addToCart2" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td><button id="addToCart3" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td><button id="addToCart4" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td><button id="addToCart5" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Harness</td><td><img src="https://www.rei.com/media/product/126508"></td><td><button id="addToCart0" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Chalk Bag</td><td><img src="https://www.rei.com/media/product/899004"></td><td><button id="addToCart1" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Climbing Shoes</td><td><img src="https://www.rei.com/media/product/122574"></td><td><button id="addToCart2" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Chalk</td><td><img src="https://www.rei.com/media/product/842037"></td><td><button id="addToCart3" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Brush</td><td><img src="https://www.rei.com/media/product/160952"></td><td><button id="addToCart4" onclick="addToCart()">Add To Cart</button></td></tr>
+            <tr><td>Gri-Gri</td><td><img src="https://www.rei.com/media/product/151970"></td><td><button id="addToCart5" onclick="addToCart()">Add To Cart</button></td></tr>
         </table>
     </div>
 </body>

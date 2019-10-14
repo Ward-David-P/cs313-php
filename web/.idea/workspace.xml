@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec058e69-7762-443d-afc9-e8d926a2febc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/checkout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/confirmOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/js/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/php/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProveAssign/Prove03/viewCart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProveAssign/Prove03/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ProveAssign/Prove03/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +111,7 @@
       <workItem from="1569852099714" duration="1704000" />
       <workItem from="1569938770169" duration="3369000" />
       <workItem from="1569945947245" duration="68000" />
-      <workItem from="1571079650580" duration="2127000" />
+      <workItem from="1571079650580" duration="2486000" />
     </task>
     <task id="LOCAL-00001" summary="added about page and updates to css">
       <created>1569351060100</created>
@@ -246,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569942048946</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="prove03">
+      <created>1571081857172</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1571081857172</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +290,7 @@
     <MESSAGE value="added assignments page" />
     <MESSAGE value="css" />
     <MESSAGE value="team assignment 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="team assignment 3" />
+    <MESSAGE value="prove03" />
+    <option name="LAST_COMMIT_MESSAGE" value="prove03" />
   </component>
 </project>
