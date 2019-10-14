@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<?php require_once 'php/functions.php' ?>
 <?php
     function pre_r($array)
     {
