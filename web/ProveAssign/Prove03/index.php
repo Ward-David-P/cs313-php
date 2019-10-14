@@ -27,7 +27,7 @@
                 <?php
                     for($i = 0; $i <= sizeof($products); $i++)
                     {
-                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages."\"></td><td><button onclick=\"".addToSession($products[$i])."\">Add To Cart</button></td></tr>";
+                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><button onclick=\"".addToSession($products[$i])."\">Add To Cart</button></td></tr>";
                     }
                 ?>
 
