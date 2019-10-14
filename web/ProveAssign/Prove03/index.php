@@ -19,7 +19,7 @@
             <tr><td>Chalk</td><td><img src="https://www.rei.com/media/product/842037"></td><td><button id="addToCart3" onclick="addToCart()">Add To Cart</button></td></tr>
             <tr><td>Brush</td><td><img src="https://www.rei.com/media/product/160952"></td><td><button id="addToCart4" onclick="addToCart()">Add To Cart</button></td></tr>
             <tr><td>Gri-Gri</td><td><img src="https://www.rei.com/media/product/151970"></td><td><button id="addToCart5" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td></td><td><button id="viewCart"</td></tr>
+            <tr><td></td><td></td><td><button id="viewCart" onclick="viewCart()">View Cart</button></td></tr>
         </table>
     </div>
 </body>
