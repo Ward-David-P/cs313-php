@@ -12,14 +12,27 @@
 <body>
     <?php require_once 'php/functions.php' ?>
     <div class="container-fluid info" id="homeDiv">
-        <table name="productTable">
-            <tr><td>Harness</td><td><img src="https://www.rei.com/media/product/126508"></td><td><button id="addToCart0" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td>Chalk Bag</td><td><img src="https://www.rei.com/media/product/899004"></td><td><button id="addToCart1" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td>Climbing Shoes</td><td><img src="https://www.rei.com/media/product/122574"></td><td><button id="addToCart2" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td>Chalk</td><td><img src="https://www.rei.com/media/product/842037"></td><td><button id="addToCart3" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td>Brush</td><td><img src="https://www.rei.com/media/product/160952"></td><td><button id="addToCart4" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td>Gri-Gri</td><td><img src="https://www.rei.com/media/product/151970"></td><td><button id="addToCart5" onclick="addToCart()">Add To Cart</button></td></tr>
-            <tr><td></td><td></td><td><button id="viewCart" onclick="viewCart()">View Cart</button></td></tr>
-        </table>
+        <?php
+            $products=array("Harness", "Chalk Bag", "Climbing Shoes", "Chalk", "Brush", "Gri-Gri");
+            $prodImages=array(
+                    "https://www.rei.com/media/product/126508",
+                "https://www.rei.com/media/product/899004",
+                "https://www.rei.com/media/product/122574",
+                "https://www.rei.com/media/product/842037",
+                "https://www.rei.com/media/product/160952",
+                "https://www.rei.com/media/product/151970");
+        ?>
+        <form action="index.php" method="post">
+            <table name="productTable">
+                <?php
+                    for($i = 0; $i <= sizeof($products); $i++)
+                    {
+                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages."\"></td><td><button onclick=\"".addToSession($products[$i])."\">Add To Cart</button></td></tr>";
+                    }
+                ?>
+
+                <tr><td></td><td></td><td><button id="viewCart" onclick="viewCart()">View Cart</button></td></tr>
+            </table>
+        </form>
     </div>
 </body>
