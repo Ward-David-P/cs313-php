@@ -27,7 +27,7 @@
                 <?php
                     for($i = 0; $i <= sizeof($products); $i++)
                     {
-                        echo "<tr><td><input type='checkbox' name='".$products[$i]."' value='".$products[$i]."'</td><td><img src=\"".$prodImages[$i]."\"></td><td></td></tr>";
+                        echo "<tr><td><input type=\"checkbox\" name=\"".$products[$i]."\" value=\"".$products[$i]."\"</td><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td></tr>";
                     }
                 ?>
 
