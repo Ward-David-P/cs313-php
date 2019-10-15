@@ -12,6 +12,36 @@
 <body>
 <?php
     session_start();
+
+    if(isset($_POST["Harness"]))
+    {
+        $_SESSION["items"]["Harness"] = 0;
+    }
+
+    if(isset($_POST["ChalkBag"]))
+    {
+        $_SESSION["items"]["ChalkBag"] = 0;
+    }
+
+    if(isset($_POST["ClimbingShoes"]))
+    {
+        $_SESSION["items"]["ClimbingShoes"] = 0;
+    }
+
+    if(isset($_POST["Chalk"]))
+    {
+        $_SESSION["items"]["Chalk"] = 0;
+    }
+
+    if(isset($_POST["Brush"]))
+    {
+        $_SESSION["items"]["Brush"] = 0;
+    }
+
+    if(isset($_POST["Gri-Gri"]))
+    {
+        $_SESSION["items"]["Gri-Gri"] = 0;
+    }
 ?>
     <form method="post">
         <table id="cart-table">
@@ -20,7 +50,10 @@
             <?php
                 foreach($_SESSION["items"] as $key=>$value)
                 {
-                    echo "<tr><td>".$key."</td><td>".$value."</td><td><input type='checkbox' name='".$key."'></td></tr>";
+                    if($value > 0)
+                    {
+                        echo "<tr><td>".$key."</td><td>".$value."</td><td><input type='checkbox' name='".$key."'></td></tr>";
+                    }
                 }
             ?>
             <tr><td></td><td><a href="checkout.php">Checkout</a></td><td><input type="submit" value="Remove Items"></td></tr>
