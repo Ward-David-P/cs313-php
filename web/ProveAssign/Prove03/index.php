@@ -22,12 +22,12 @@
                 "https://www.rei.com/media/product/160952",
                 "https://www.rei.com/media/product/151970");
         ?>
-        <form action="index.php" method="post">
+        <form method="post">
             <table name="productTable">
                 <?php
                     for($i = 0; $i <= sizeof($products); $i++)
                     {
-                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><button onclick=\"".addToSession($products[$i])."\">Add To Cart</button></td></tr>";
+                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><input type='submit' name='".$products[$i]."'>Add To Cart</input></td></tr>";
                     }
                 ?>
 
