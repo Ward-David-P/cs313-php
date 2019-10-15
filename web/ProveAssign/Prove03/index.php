@@ -13,7 +13,7 @@
     <?php require_once 'php/functions.php' ?>
     <div class="container-fluid info" id="homeDiv">
         <?php
-            $products=array("Harness", "Chalk Bag", "Climbing Shoes", "Chalk", "Brush", "Gri-Gri");
+            $products=array("Harness", "ChalkBag", "ClimbingShoes", "Chalk", "Brush", "Gri-Gri");
             $prodImages=array(
                     "https://www.rei.com/media/product/126508",
                 "https://www.rei.com/media/product/899004",

@@ -17,14 +17,14 @@ if(isset($_POST["Harness"]))
     $_SESSION["items"]["Harness"] += 1;
 }
 
-if(isset($_POST["Chalk Bag"]))
+if(isset($_POST["ChalkBag"]))
 {
-    $_SESSION["items"]["Chalk Bag"] += 1;
+    $_SESSION["items"]["ChalkBag"] += 1;
 }
 
-if(isset($_POST["Climbing Shoes"]))
+if(isset($_POST["ClimbingShoes"]))
 {
-    $_SESSION["items"]["Climbing Shoes"] += 1;
+    $_SESSION["items"]["ClimbingShoes"] += 1;
 }
 
 if(isset($_POST["Chalk"]))
