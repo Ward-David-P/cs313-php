@@ -27,7 +27,7 @@
                 <?php
                     for($i = 0; $i <= sizeof($products); $i++)
                     {
-                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><input type='submit' name='".$products[$i]."'>Add To Cart</input></td></tr>";
+                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><input type='submit' name='".$products[$i]."' value='Add To Cart'></td></tr>";
                     }
                 ?>
 
