@@ -12,14 +12,18 @@
 <body>
 <?php
     session_start();
-
-    function pre_r($array)
-    {
-        echo "<pre>";
-        print_r($array);
-        echo "</pre>";
-    }
-
-    pre_r($_SESSION['items']);
 ?>
+    <form method="post">
+        <table id="cart-table">
+            <tr><th>In Your Cart</th></tr>
+            <tr><td>Product</td><td>Qty</td><td>Remove</td></tr>
+            <?php
+                foreach($_SESSION["items"] as $key)
+                {
+                    echo "<tr><td>".$key."</td><td>".$_SESSION["items"][$key]."</td><td><input type='checkbox' name='".$key."'></td></tr>";
+                }
+            ?>
+            <tr><td></td><td><a href="checkout.php">Checkout</a></td><td><input type="submit" value="Remove Items"></td></tr>
+        </table>
+    </form>
 </body>
