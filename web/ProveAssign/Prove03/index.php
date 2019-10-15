@@ -27,11 +27,22 @@
                 <?php
                     for($i = 0; $i <= sizeof($products); $i++)
                     {
-                        echo "<tr><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td><td><input type='submit' name='".$products[$i]."' value='Add To Cart'></td></tr>";
+                        echo "<tr><td><input type='checkbox' name='".$products[$i]."' value='".$products[$i]."'</td><td><img src=\"".$prodImages[$i]."\"></td><td></td></tr>";
                     }
                 ?>
 
-                <tr><td></td><td></td><td><button id="viewCart" onclick="viewCart()">View Cart</button></td></tr>
+                <?php
+                    function pre_r($array)
+                    {
+                        echo "<pre>";
+                        print_r($array);
+                        echo "</pre>";
+                    }
+
+                    pre_r($_SESSION['items']);
+                ?>
+
+                <tr><td></td><td></td><td><a href="viewCart.php" id="viewCart">View Cart</a></td></tr>
             </table>
         </form>
     </div>
