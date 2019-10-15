@@ -31,6 +31,8 @@
                     }
                 ?>
 
+                <tr><td><p>Add Items to Cart</p></td><td></td><td><input type="submit" value="Add to Cart"></td></tr>
+
                 <?php
                     function pre_r($array)
                     {
