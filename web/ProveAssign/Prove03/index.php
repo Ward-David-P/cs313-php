@@ -21,6 +21,11 @@
                 "https://www.rei.com/media/product/842037",
                 "https://www.rei.com/media/product/160952",
                 "https://www.rei.com/media/product/151970");
+
+            for($i = 0; $i <= sizeof($products); $i++)
+            {
+                echo $products[$i]."<br />";
+            }
         ?>
         <form method="post">
             <table name="productTable">
