@@ -9,3 +9,19 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+<body>
+    <?php
+        session_start();
+    ?>
+    <form method="post" action="confirmOrder.php">
+        <table>
+            <tr><td>Name:</td><td><input type="text" name="name"></td></tr>
+            <tr><td>Street Address:</td><td><input type="text" name="address"></td></tr>
+            <tr><td>City:</td><td><input type="text" name="city"></td></tr>
+            <tr><td>State:</td><td><input type="text" name="state"></td></tr>
+            <tr><td>Zip Code:</td><td><input type="text" name="zipcode"></td></tr>
+            <tr><td>Email Address:</td><td><input type="text" name="email"></td></tr>
+            <tr><td></td><td><input type="submit" value="Confirm Order"></td></tr>
+        </table>
+    </form>
+</body>
