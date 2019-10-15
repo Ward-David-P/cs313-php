@@ -43,3 +43,5 @@ CREATE TABLE cb_comicbooks (
 	cover_image varchar(256),
 	summary varchar(2048)
 );
+
+ALTER TABLE cb_users ADD COLUMN comics_owned integer[];
