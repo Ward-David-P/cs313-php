@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<?php require_once 'php/functions.php' ?>
 <?php
+    session_start();
+
     function pre_r($array)
     {
         echo "<pre>";
