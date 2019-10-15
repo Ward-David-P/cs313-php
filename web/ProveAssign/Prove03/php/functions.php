@@ -1,17 +1,6 @@
 <?php
 session_start();
 
-/**
-$items_array = array(
-    "Harness" => 0,
-    "Chalk Bag" => 0,
-    "Climbing Shoes" => 0,
-    "Chalk" => 0,
-    "Brush" => 0,
-    "Gri-Gri" => 0
-);
-*/
-
 if(isset($_POST["Harness"]))
 {
     $_SESSION["items"]["Harness"] += 1;

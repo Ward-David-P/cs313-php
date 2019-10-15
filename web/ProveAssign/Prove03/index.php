@@ -21,34 +21,17 @@
                 "https://www.rei.com/media/product/842037",
                 "https://www.rei.com/media/product/160952",
                 "https://www.rei.com/media/product/151970");
-
-            for($i = 0; $i <= sizeof($products); $i++)
-            {
-                echo $products[$i]."<br />";
-            }
         ?>
         <form method="post">
             <table name="productTable">
                 <?php
-                    for($i = 0; $i <= sizeof($products); $i++)
+                    for($i = 0; $i < sizeof($products); $i++)
                     {
                         echo "<tr><td><input type=\"checkbox\" name=\"".$products[$i]."\" value=\"".$products[$i]."\"</td><td>".$products[$i]."</td><td><img src=\"".$prodImages[$i]."\"></td></tr>";
                     }
                 ?>
 
                 <tr><td><p>Add Items to Cart</p></td><td></td><td><input type="submit" value="Add to Cart"></td></tr>
-
-                <?php
-                    function pre_r($array)
-                    {
-                        echo "<pre>";
-                        print_r($array);
-                        echo "</pre>";
-                    }
-
-                    pre_r($_SESSION['items']);
-                ?>
-
                 <tr><td></td><td></td><td><a href="viewCart.php" id="viewCart">View Cart</a></td></tr>
             </table>
         </form>

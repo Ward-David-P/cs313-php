@@ -56,7 +56,7 @@
                     }
                 }
             ?>
-            <tr><td></td><td><a href="checkout.php">Checkout</a></td><td><input type="submit" value="Remove Items"></td></tr>
+            <tr><td><a href="index.php">Back</a></td><td><a href="checkout.php">Checkout</a></td><td><input type="submit" value="Remove Items"></td></tr>
         </table>
     </form>
 </body>
