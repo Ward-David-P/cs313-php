@@ -18,9 +18,9 @@
             <tr><th>In Your Cart</th></tr>
             <tr><td>Product</td><td>Qty</td><td>Remove</td></tr>
             <?php
-                foreach($_SESSION["items"] as $key)
+                foreach($_SESSION["items"] as $key=>$value)
                 {
-                    echo "<tr><td>".$key."</td><td>".$_SESSION["items"][$key]."</td><td><input type='checkbox' name='".$key."'></td></tr>";
+                    echo "<tr><td>".$key."</td><td>".$value."</td><td><input type='checkbox' name='".$key."'></td></tr>";
                 }
             ?>
             <tr><td></td><td><a href="checkout.php">Checkout</a></td><td><input type="submit" value="Remove Items"></td></tr>
