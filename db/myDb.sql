@@ -45,3 +45,39 @@ CREATE TABLE cb_comicbooks (
 );
 
 ALTER TABLE cb_users ADD COLUMN comics_owned integer[];
+
+ALTER TABLE cb_comicbooks
+	DROP COLUMN writer_1,
+	DROP COLUMN writer_2,
+	DROP COLUMN writer_3,
+	DROP COLUMN writer_4,
+	DROP COLUMN writer_5,
+	DROP COLUMN artist_1,
+	DROP COLUMN artist_2,
+	DROP COLUMN artist_3,
+	DROP COLUMN artist_4,
+	DROP COLUMN artist_5;
+	
+ALTER TABLE cb_comicbooks
+	ADD COLUMN writers integer[] ELEMENT REFERENCES cb_writers(writer_id),
+	ADD COLUMN artists integer[] ELEMENT REFERENCES cb_artists(artist_id);
+	
+INSERT INTO cb_writers(first_name, last_name)
+	VALUES
+	('Jeph', 'Loeb'),
+	('Phillip K.', 'Dick'),
+	('Mark', 'Verheiden'),
+	('Alan', 'Burnett'),
+	('Michael', 'Green'),
+	('Mike', 'Johnson'),
+	('Peter', 'Johnson'),
+	('Matt', 'Cherniss'),
+	('Scott', 'Kolins'),
+	('Joe', 'Casey'),
+	('Joshua', 'Williamson'),
+	('Paul', 'Levitz'),
+	('Cullen', 'Bunn'),
+	('Chris', 'Roberson'),
+	('Joe', 'Kelly'),
+	('Jack', 'Kelly'),
+	('Amanda', 'McMurray');
