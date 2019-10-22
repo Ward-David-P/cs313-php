@@ -30,6 +30,7 @@
                 if (pg_num_rows($row) > 0)
                 {
                     $_SESSION['username'] = $username;
+                    echo $username;
                     header("Location:manage.php");
                 }
 
