@@ -57,11 +57,7 @@ ALTER TABLE cb_comicbooks
 	DROP COLUMN artist_3,
 	DROP COLUMN artist_4,
 	DROP COLUMN artist_5;
-	
-ALTER TABLE cb_comicbooks
-	ADD COLUMN writers integer[] ELEMENT REFERENCES cb_writers(writer_id),
-	ADD COLUMN artists integer[] ELEMENT REFERENCES cb_artists(artist_id);
-	
+
 INSERT INTO cb_writers(first_name, last_name)
 	VALUES
 	('Jeph', 'Loeb'),
@@ -81,3 +77,18 @@ INSERT INTO cb_writers(first_name, last_name)
 	('Joe', 'Kelly'),
 	('Jack', 'Kelly'),
 	('Amanda', 'McMurray');
+	
+CREATE TABLE cb_comicbooks_to_writers (
+	comic_id  int references cb_comicbooks(comic_id),
+	writer_id  int references cb_writers(writer_id)
+);
+
+CREATE TABLE cb_comicbooks_to_artists (
+	comic_id  int references cb_comicbooks(comic_id),
+	artist_id  int references cb_artists(artist_id)
+);
+
+CREATE TABLE cb_comicbooks_to_users (
+	comic_id  int references cb_comicbooks(comic_id),
+	user_id int references cb_users(user_id)
+);
