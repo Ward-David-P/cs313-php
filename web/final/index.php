@@ -31,7 +31,7 @@
                     $password = htmlspecialchars($_POST['password']);
                     $hashed = MD5($password);
                     echo $hashed;
-                    $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password=MD5('".$password."'";
+                    $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password=MD5('".$password."')";
                     $db = get_db();
                     $row = $db->query($loginQuery);
                 
