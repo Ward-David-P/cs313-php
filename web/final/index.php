@@ -16,7 +16,7 @@
 <body>
     <div id='main'>
         <div>
-            <form action='index.php' method='post'>
+            <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='post'>
                 Username: <input type='text' name='username'></br>
                 Password: <input type='password' name='password'></br>
                 <input type='submit' value='Login'>
