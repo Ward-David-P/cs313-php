@@ -2,7 +2,7 @@
 function get_db() {
 	$db = NULL;
 	try {
-		
+		$dbUrl = getenv('DATABASE_URL');
 		$dbopts = parse_url($dbUrl);
 		$dbHost = $dbopts["host"];
 		$dbPort = $dbopts["port"];
