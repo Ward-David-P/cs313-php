@@ -9,13 +9,13 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<?php
-    require_once 'includes/dbConnect.php';
-    session_start();
-    error_reporting(E_ALL);
-    ini_set("display_errors", 1);
-?>
 <body>
+    <?php
+        require_once 'includes/dbConnect.php';
+        session_start();
+        error_reporting(E_ALL);
+        ini_set("display_errors", 1);
+    ?>
     <div id='main'>
         <div>
             <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='post'>
