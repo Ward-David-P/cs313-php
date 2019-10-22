@@ -26,21 +26,24 @@
 
             <?php
                 if(isset($_POST['username']))
-                $username = htmlspecialchars($_POST['username']);
-                $password = htmlspecialchars($_POST['password']);
-                $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password = MD5('".$password."'";
-                $row = $db->query($loginQuery);
-                if (pg_num_rows($row) > 0)
                 {
-                    $_SESSION['username'] = $username;
-                    echo $username;
-                    header("Location:manage.php");
-                }
+                    $username = htmlspecialchars($_POST['username']);
+                    $password = htmlspecialchars($_POST['password']);
+                    $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password = MD5('".$password."'";
+                    $row = $db->query($loginQuery);
+                
+                    if (pg_num_rows($row) > 0)
+                    {
+                        $_SESSION['username'] = $username;
+                        echo $username;
+                        header("Location:manage.php");
+                    }
 
-                else
-                {
-                    echo "</br><pre class='warning'>The username/password combination you have entered does not exist!</pre>";
-                    echo "<a href='includes/passwordReset.php'>Reset Password</a>";
+                    else
+                    {
+                        echo "</br><pre class='warning'>The username/password combination you have entered does not exist!</pre>";
+                        echo "<a href='includes/passwordReset.php'>Reset Password</a>";
+                    }
                 }
             ?>
         </div>
