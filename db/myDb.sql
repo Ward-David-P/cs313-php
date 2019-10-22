@@ -92,3 +92,27 @@ CREATE TABLE cb_comicbooks_to_users (
 	comic_id  int references cb_comicbooks(comic_id),
 	user_id int references cb_users(user_id)
 );
+
+INSERT INTO cb_writers(first_name, last_name)
+	VALUES
+	('Adam', 'Beechen');
+	
+INSERT INTO cb_artists(first_name, last_name)
+	VALUES
+	('Ryan', 'Benjamin'),
+	('John', 'Stanisci'),
+	('David', 'Baron'),
+	('Travis', 'Lanham'),
+	('Dustin', 'Nguyen'),
+	('Eduardo', 'Pansica'),
+	('Eber', 'Ferreira'),
+	('Chris', 'Batista'),
+	('Rich', 'Perrotta'),
+	('David', 'Baron'),
+	('', 'Swands'),
+	('Darwyn', 'Cooke');
+	
+INSERT INTO cb_users(username, password, first_name, last_name, user_role, email)
+	VALUES ('crazyivan85204', MD5('Plasticwater~304'), 'David', 'Ward', '0', 'crazyivan85204@yahoo.com');
+
+ALTER TABLE cb_users ADD CONSTRAINT cb_user UNIQUE (username, email);
