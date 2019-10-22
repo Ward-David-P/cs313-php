@@ -25,6 +25,7 @@
             </form>
 
             <?php
+                if(isset($_POST['username']))
                 $username = htmlspecialchars($_POST['username']);
                 $password = htmlspecialchars($_POST['password']);
                 $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password = MD5('".$password."'";
