@@ -35,7 +35,7 @@
                     $db = get_db();
                     $row = $db->query($loginQuery);
                 
-                    if (pg_num_rows($row) > 0)
+                    if (count($row) > 0)
                     {
                         $_SESSION['username'] = $username;
                         echo $username;
