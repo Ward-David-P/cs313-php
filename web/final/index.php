@@ -32,17 +32,18 @@
                     $hashed = MD5($password);
                     $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password='".$hashed."'";
                     $db = get_db();
-                    $row = $db->query($loginQuery);
+                    $db->query($loginQuery);
+                    $count = 0
                 
-                    if (count($row) > 0)
+                    foreach($db->query($loginQuery) as $row)
                     {
                         echo $row;
                         $_SESSION['username'] = $username;
                         echo $username;
                         header("Location:manage.php");
                     }
-
-                    else
+                    
+                    if($count == 0)
                     {
                         echo "</br><pre class='warning'>The username/password combination you have entered does not exist!</pre>";
                         echo "<a href='includes/passwordReset.php'>Reset Password</a>";
