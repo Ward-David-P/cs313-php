@@ -17,7 +17,24 @@
         ini_set("display_errors", 1);
     ?>
     <div id='main'>
-        <div>
+        <div class='search'>
+            <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='post'>
+                Simple Search: <input type='text' name='searchParam'>
+                <input type='submit' value='search'>
+            </form>
+        </div>
+        <div class='searchResults'>
+            <?php
+                if(isset($_POST['searchParam']))
+                {
+                    $searchParam = $_POST['searchParam'];
+                    $searchQuery1 = "SELECT comic_id FROM cb_comicbooks WHERE '".$searchParam."' IN (title, publication_date, publisher, summary)";
+                    $searchQuery2 = "SELECT writer_id FROM cb_writers WHERE '".$searchParam."' IN (first_name, last_name)";
+                    $searchQuery3 = "SELECT artist_id FROM cb_artists WHERE '".$searchParam."' IN (first_name, last_name)";
+                }
+            ?>
+        </div>
+        <div class='login'>
             <form action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>' method='post'>
                 Username: <input type='text' name='username'></br>
                 Password: <input type='password' name='password'></br>
@@ -34,7 +51,7 @@
                     $db = get_db();
                     $db->query($loginQuery);
                     $count = 0;
-                    
+
                     foreach ($db->query($loginQuery) as $row)
                     {
                         echo $row;
