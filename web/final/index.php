@@ -33,16 +33,16 @@
                     $loginQuery = "SELECT user_id FROM cb_users WHERE username = '".$username."' AND password='".$hashed."'";
                     $db = get_db();
                     $db->query($loginQuery);
-                    $count = 0
-                
-                    foreach($db->query($loginQuery) as $row)
+                    $count = 0;
+                    
+                    foreach ($db->query($loginQuery) as $row)
                     {
                         echo $row;
                         $_SESSION['username'] = $username;
                         echo $username;
                         header("Location:manage.php");
                     }
-                    
+
                     if($count == 0)
                     {
                         echo "</br><pre class='warning'>The username/password combination you have entered does not exist!</pre>";
