@@ -37,6 +37,7 @@
                 
                     if (count($row) > 0)
                     {
+                        echo $row;
                         $_SESSION['username'] = $username;
                         echo $username;
                         header("Location:manage.php");
